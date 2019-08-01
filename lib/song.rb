@@ -32,4 +32,8 @@ class Song
   def self.find_by_name(name)
     all.select{|n| n.name == name}.first
   end
+
+  def self.find_or_create_by_name(name)
+
+  end
 end

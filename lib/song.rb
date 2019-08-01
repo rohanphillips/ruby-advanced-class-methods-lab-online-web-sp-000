@@ -24,7 +24,7 @@ class Song
   end
 
   def self.create_by_name(name)
-    newsong = Song.new_by_name(name)
+    newsong = new_by_name(name)
     newsong.save
     newsong
   end
@@ -40,6 +40,5 @@ class Song
         return newsong
     end
     foundsong
-
   end
 end

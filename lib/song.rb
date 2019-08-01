@@ -56,4 +56,8 @@ class Song
     newsong.artist_name = filename.match(/^([\w\-]+)/).to_s
     newsong
   end
+
+  def self.destroy_all
+    @@all.clear
+  end
 end

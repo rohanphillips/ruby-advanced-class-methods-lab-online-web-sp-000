@@ -44,4 +44,10 @@ class Song
   def self.alphabetical
     @@all.sort_by{|n| n.name}
   end
+
+  def self.new_from_filename(filename)
+    artist = filename.match(/^([\w\-]+)/)
+    song = filename.match(/(?<=- ).*(?=[.][m])/)
+    binding.pry
+  end
 end

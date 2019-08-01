@@ -34,11 +34,12 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    newsong = find_by_name(name)
-    if newsong == false
-      newsong = create_by_name(name)
+    foundsong = find_by_name(name)
+    newsong = create_by_name(name)
+    if foundsong == false
+        return newsong
     end
-    newsong
+    foundsong
 
   end
 end

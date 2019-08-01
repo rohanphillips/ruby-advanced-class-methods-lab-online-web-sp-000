@@ -48,6 +48,6 @@ class Song
   def self.new_from_filename(filename)
     artist = filename.match(/^([\w\-]+)/)
     song = filename.match(/(?<=- ).*(?=[.][m])/)
-    binding.pry
+    create_by_name(filename.match(/(?<=- ).*(?=[.][m])/))
   end
 end

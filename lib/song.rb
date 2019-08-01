@@ -40,4 +40,8 @@ class Song
     end
     foundsong
   end
+
+  def self.alphabetical
+    binding.pry
+  end
 end
